@@ -1,0 +1,182 @@
+.section__our-team {
+  padding-top: 80px;
+}
+
+.our-team__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 570px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+.description-title {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 570px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+.description-title-item {
+  padding-top: 60px;
+  opacity: 0.8;
+  color: #062033;
+  font-family: 'OpenSans-SemiBold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 105px;
+}
+
+.photo__icon li {
+  margin: 0 3px;
+  padding: 0;
+}
+
+.icon-item:hover {
+  opacity: 1;
+}
+
+.name__imeges {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.team-section-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  @media (min-width: 768px) {
+   flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.icon-item .twitter {
+  margin-top: 2px;
+}
+
+.team-section-list__cover {
+  position: relative;
+  width: 270px;
+  transition: 200ms;
+  transition-timing-function: linear;
+}
+
+.team-section-list__cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 303px;
+  background-color: #0eb493;
+  opacity: 0;
+}
+
+.team-section-list__blok {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.photo__icon-item {
+  padding-top: 5px;
+}
+
+.photo__icon {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.icon-item {
+  height: 100%;
+  display: block;
+  background-color: #000000;
+  opacity: 0.6;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+}
+
+.team-section-list__item:hover .team-section-list__cont {
+  opacity: 0.85;
+}
+
+h4 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+p {
+  display: block;
+}
+
+.title-photo {
+  padding-top: 20px;
+  text-align: center;
+  height: auto;
+  color: $primary-white;
+  font-size: 18px;
+  font-family: 'OpenSans-Regular';
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.text-photo {
+  width: 221px;
+  padding-bottom: 30px;
+  color: $primary-white;
+  font-family: 'OpenSans-Regular';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.name__photo {
+  text-align: center;
+  color: $dark-gray;
+  font-family: 'OpenSans-SemiBold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.team-section-list__fon:hover .name__photo {
+  color: $blue;
+}
+
+.description__photo {
+  text-align: center;
+  opacity: 0.56;
+  color: $dark-gray;
+  font-family: 'OpenSans-Regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+

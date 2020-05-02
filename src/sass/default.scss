@@ -1,0 +1,55 @@
+.sec-title {
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Raleway-Bold';
+  color: $primary-aqua;
+  font-weight: 700;
+  line-height: 1.286;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 160px;
+  @media (min-width: 768px) {
+    font-size: 28px;
+    width: 210px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 28px;
+    width: 210px;
+  }
+}
+
+.sec-title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  background-color: $secondary-gold;
+  opacity: 0.4;
+  width: 60px;
+  height: 2px;
+}
+
+.sec-title:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -75px;
+  background-color: $secondary-gold;
+  opacity: 0.4;
+  width: 60px;
+  height: 2px;
+}
+
+.container {
+  padding-top: 0;
+  width: 292px;
+  @media (min-width: 768px) {
+    width: 748px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1180px;
+  }
+}

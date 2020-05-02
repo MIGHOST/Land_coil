@@ -1,0 +1,358 @@
+.contacts-form-sec {
+  background-image: url(../images/contacts-form-sec/contacts-background.jpg);
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.contacts-form-sec__wrapper {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 50px;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1200px) {}
+}
+
+.contacts-form-sec__title {
+  margin-bottom: 20px;
+  color: $primary-aqua;
+  font-family: 'Helvetica Neue';
+}
+
+
+
+.contacts-title {
+  font-size: 26px;
+  font-family: 'Helvetica Neue';
+  color: $secondary-gold;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contacts-description {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  line-height: 1.5;
+  color: $primary-white;
+  width: 90%;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.our-contacts {
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 450px;
+    text-align: left;
+  }
+}
+
+.socials-list {
+  margin: 30px auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+}
+
+.socials-item {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin: 0 10px;
+  position: relative;
+  z-index: 3;
+  background-color: #007ab9;
+}
+
+.socials-item:hover {
+  background-color: $blue;
+  cursor: pointer;
+  transition: all 400ms linear;
+}
+
+.socials-item::after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  background-color: #007ab9;
+  z-index: -1;
+}
+
+.socials-item--facebook::after {
+  background: url(../images/icons/icon-facebook.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.socials-item--twitter::after {
+  background: url(../images/icons/icon-twitter.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.socials-item--linkedin::after {
+  background: url(../images/icons/icon-linkedin.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.socials-list li {
+  list-style: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {}
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: 1200px) {
+    width: 580px;
+  }
+}
+
+.contacts-tel,
+.contacts-email {
+  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  color: $primary-white;
+  line-height: 1.714;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1200px) {
+    padding-top: 20px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.input-textarea {
+  // font-size: 14px;
+  // font-family: 'Helvetica Neue';
+  color: $light-gray;
+  border-radius: 3px;
+  background-color: $primary-white;
+  height: 179px;
+  width: 90%;
+  padding-top: 15px;
+  padding-left: 15px;
+
+  @media (min-width: 768px) {}
+
+  width: 100%;
+
+  @media (min-width: 1200px) {}
+}
+
+.input-name,
+.input-email {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding-left: 15px;
+  border-radius: 3px;
+  background-color: $primary-white;
+  width: 100%;
+  height: 44px;
+
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+
+  @media (min-width: 1200px) {}
+}
+
+.contact-form {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.input-textarea,
+.input-name,
+.input-email {
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  display: block;
+}
+
+.input-textarea::placeholder {
+  // font-weight: 700;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  line-height: 1.5;
+  text-align: left;
+  // padding-left: 20px;
+  // padding-top: 20px;
+}
+
+.input-name::placeholder {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  ;
+  color: #c1c1c1;
+  line-height: 1.5;
+  text-align: left;
+  // padding-left: 20px;
+}
+
+.input-email::placeholder {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  ;
+  color: #c1c1c1;
+  line-height: 1.5;
+  text-align: left;
+  // padding-left: 20px;
+}
+
+.submit-btn {
+  border-radius: 3px;
+  background-color: $blue;
+  width: 170px;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin: 10px auto;
+  display: block;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-white;
+  line-height: 1.091;
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.submit-btn:hover {
+  background-color: $light-gray;
+  transition: all 400ms linear;
+  cursor: pointer;
+}
+
+.contacts-form-sec__area {
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 40px;
+  }
+}
+
+.divider {
+  background-color: $light-gray;
+  width: 100vw;
+  height: 5px;
+}
+
+.footer-rights {
+  display: block;
+  font-size: 14px;
+  font-family: 'Helvetica Neue';
+  color: $blue;
+  line-height: 1.5;
+  text-align: left;
+  width: 178px;
+  height: 35px;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
+}
+
+.footer-rights-wrapper {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid $light-gray;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
+}

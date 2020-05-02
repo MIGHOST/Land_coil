@@ -1,0 +1,16 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import './normalize.scss';
+@import './media.scss';
+@import './base.scss';
+@import './variables.scss';
+@import './default.scss';
+
+@import './sections/header.scss';
+@import './sections/intro-section.scss';
+@import './sections/activity.scss';
+@import './sections/watch-video-section.scss';
+@import './sections/our-team.scss';
+@import './sections/feedbacks-sec.scss';
+@import './sections/contacts-form-sec.scss';
