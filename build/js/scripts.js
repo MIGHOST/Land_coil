@@ -13,5 +13,3 @@ var showMenu = function showMenu(e) {
 
 list.addEventListener("click", showMenu);
 "use strict";
-
-console.log("test");

@@ -186,7 +186,7 @@ table.cwd th {
   }
 
   @media (min-width: 1200px) {
-
+line-height: 1.2;
     font-size: 20px;
   }
 
@@ -203,7 +203,8 @@ table.cwd td {
 
   @media (min-width: 1200px) {
     font-size: 18px;
-    line-height: 48px;
+    line-height: 1.2;
+  
   }
 }
 
@@ -211,7 +212,7 @@ table.cwd td,
 table.cwd th {
   white-space: pre-wrap;
   padding: 10px 0px;
-  line-height: 16px;
+
   vertical-align: middle;
   border: 1px solid #354251;
 }
@@ -225,9 +226,10 @@ table.cwd tr:hover th {
 
   table.cwd td,
   table.cwd th {
-    white-space: pre-wrap;
-    padding: 15px 25px;
-    vertical-align: middle;
+
+    // white-space: pre-wrap;
+    padding: 20px 25px;
+    vertical-align: top;
     border: 1px solid #354251;
   }
 
