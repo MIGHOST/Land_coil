@@ -84,6 +84,9 @@
   &__img {
     width: 90px;
     height: 200px;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   @media (min-width: 768px) {
@@ -103,10 +106,7 @@
     &__img {
       width: 350px;
       height: 500px;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+     
     }
   }
 }
