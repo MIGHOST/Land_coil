@@ -5,8 +5,6 @@
   padding: 15px;
 }
 
-
-
 .link {
   display: block;
   text-decoration: none;
@@ -47,9 +45,13 @@
 }
 
 .link-nav {
-  font-family: 'OpenSans-Bold';
-  font-size: 13px;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
   color: $light-gray;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+   
+  }
 }
 
 // burger-menu
@@ -63,6 +65,7 @@
   height: 20px;
   cursor: pointer;
   transition: 0.4s;
+  
 }
 
 .navigation__icon {
@@ -229,9 +232,4 @@
     padding-right: 35px;
     top: 30px;
   }
-}
-
-
-.js-nav{
-  display: none;
 }
