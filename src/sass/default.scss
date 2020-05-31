@@ -1,7 +1,8 @@
 .sec-title {
   margin: 0 auto;
   font-size: 18px;
-  font-family: 'Raleway-Bold';
+  font-family: 'Helvetica Neue';
+  ;
   color: $primary-aqua;
   font-weight: 700;
   line-height: 1.286;
@@ -9,6 +10,7 @@
   text-transform: uppercase;
   position: relative;
   width: 160px;
+
   @media (min-width: 768px) {
     font-size: 28px;
     width: 210px;
@@ -45,6 +47,7 @@
 .container {
   padding-top: 0;
   width: 292px;
+
   @media (min-width: 768px) {
     width: 748px;
   }

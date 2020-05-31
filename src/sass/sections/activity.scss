@@ -7,7 +7,7 @@
   padding-top: 20px;
 
   @media (min-width: 768px) {
-    padding-top: 50px;
+    padding: 50px;
   }
 
   // @media (min-width: 1200px) {
@@ -84,6 +84,7 @@
   &__img {
     width: 90px;
     height: 200px;
+
     &:hover {
       transform: scale(1.05);
     }
@@ -106,7 +107,7 @@
     &__img {
       width: 350px;
       height: 500px;
-     
+
     }
   }
 }
@@ -159,7 +160,7 @@
   @media (min-width: 1200px) {
     font-size: 24px;
     line-height: 1.2;
- 
+
   }
 
 }
@@ -172,7 +173,7 @@ table.cwd {
   border-collapse: collapse;
   width: 100%;
   text-align: center;
- 
+
 }
 
 table.cwd th {
@@ -186,7 +187,7 @@ table.cwd th {
   }
 
   @media (min-width: 1200px) {
-line-height: 1.2;
+    line-height: 1.2;
     font-size: 20px;
   }
 
@@ -204,7 +205,7 @@ table.cwd td {
   @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 1.2;
-  
+
   }
 }
 
@@ -226,8 +227,6 @@ table.cwd tr:hover th {
 
   table.cwd td,
   table.cwd th {
-
-    // white-space: pre-wrap;
     padding: 20px 25px;
     vertical-align: top;
     border: 1px solid #354251;
@@ -235,11 +234,9 @@ table.cwd tr:hover th {
 
   table.cwd tr:hover td {
     background-color: rgb(177, 169, 169);
-    transform: scale(1.01);
     cursor: pointer;
   }
 }
-
 
 .mobile-table {
   width: 100%;
@@ -256,13 +253,13 @@ table.cwd tr:hover th {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
-  // align-items: center;
+
 }
 
 .form_list {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .form_list_item:not(:last-child) {
@@ -283,11 +280,11 @@ table.cwd tr:hover th {
   line-height: 1.2;
 
   @media (min-width: 1200px) {
-    font-size: 18px;    
+    font-size: 18px;
     height: 70px;
-    padding-left: 5px; 
+    padding-left: 5px;
     width: 600px;
-  
+
   }
 
 }
@@ -367,4 +364,9 @@ table.cwd tr:hover th {
 
 .sent_button:hover {
   transform: scale(1.1);
+}
+
+
+.activity_js{
+  display: none;
 }

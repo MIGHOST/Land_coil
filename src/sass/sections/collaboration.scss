@@ -1,157 +1,47 @@
 .contacts-form-sec {
   background-image: url(../images/contacts-form-sec/contacts-background.jpg);
-  margin: 0 auto;
+
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .contacts-form-sec__wrapper {
+  width: 280px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 50px;
+  text-align: center;
+  padding: 50px 0;
 
   @media (min-width: 768px) {
-    width: 80%;
+    width: 708px;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    width: 1145px;
+  }
 }
+// .collaboration-box{
+//   display: inline-block;
+//   width: 292px;
+//   margin: 0 auto;
+//   text-align: center;
+//   padding: 50px 0;
+
+
+//   @media (min-width: 768px) {
+//     width: 708px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     width: 1145px;
+//   }
+// }
 
 .contacts-form-sec__title {
   margin-bottom: 20px;
   color: $primary-aqua;
   font-family: 'Helvetica Neue';
-}
-
-
-
-.contacts-title {
-  font-size: 26px;
-  font-family: 'Helvetica Neue';
-  color: $secondary-gold;
-  line-height: 1;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.address-list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  &__item {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: 'Helvetica Neue';
-    line-height: 1.5;
-    color: $primary-white;
-    width: 90%; 
-  }
-  
-  }
-  .contact__subtitle{
-    padding: 0 25px;
-    letter-spacing: 0.01px; }
-
-.our-contacts {
-  margin: 0 auto;
-  text-align: center;
-
-  @media (min-width: 768px) {}
-
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 450px;
-    text-align: left;
-  }
-}
-
-.socials-list {
-  margin: 30px auto;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  flex-wrap: wrap;
-
-  @media (min-width: 768px) {}
-
-  @media (min-width: 1200px) {
-    margin: 0;
-    justify-content: flex-start;
-    padding-top: 40px;
-  }
-}
-
-.socials-item {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  margin: 0 10px;
-  position: relative;
-  z-index: 3;
-  background-color: #007ab9;
-}
-
-.socials-item:hover {
-  background-color: $blue;
-  cursor: pointer;
-  transition: all 400ms linear;
-}
-
-.socials-item::after {
-  position: absolute;
-  content: '';
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  background-color: #007ab9;
-  z-index: -1;
-}
-
-.socials-item--facebook::after {
-  background: url(../images/icons/icon-facebook.svg);
-  background-size: 20px 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.socials-item--twitter::after {
-  background: url(../images/icons/icon-twitter.svg);
-  background-size: 20px 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.socials-item--linkedin::after {
-  background: url(../images/icons/icon-linkedin.svg);
-  background-size: 20px 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-
-.socials-list li {
-  list-style: none;
 }
 
 .contact-form {
@@ -332,44 +222,9 @@
 
   @media (min-width: 1200px) {
     display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
-    padding-top: 40px;
+    // padding-top: 20px;
   }
 }
 
-.footer-rights {
-  display: block;
-  font-size: 14px;
-  font-family: 'Helvetica Neue';
-  color: $blue;
-  line-height: 1.5;
-  // text-align: left;
-  // width: 178px;
-  // height: 35px;
-
-  // @media (min-width: 768px) {
-  //   width: auto;
-  // }
-
-  // @media (min-width: 1200px) {
-  //   width: auto;
-  // }
-}
-
-.footer-rights-wrapper {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid $light-gray;
-
-  @media (min-width: 768px) {
-    width: auto;
-  }
-
-  @media (min-width: 1200px) {
-    width: auto;
-  }
-}
-
-.trip{
-  text-align: center;
-}
