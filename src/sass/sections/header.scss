@@ -20,11 +20,11 @@
 
 @keyframes nav-wake {
   0% {
-      transform: translateY(-200px);
+    transform: translateY(-200px);
   }
 
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -48,10 +48,15 @@
   font-family: 'Helvetica Neue';
   font-size: 14px;
   color: $light-gray;
+
   @media (min-width: 1200px) {
     font-size: 18px;
-   
+
   }
+}
+
+.language_link {
+  color: white;
 }
 
 // burger-menu
@@ -65,7 +70,7 @@
   height: 20px;
   cursor: pointer;
   transition: 0.4s;
-  
+
 }
 
 .navigation__icon {
@@ -128,15 +133,15 @@
 .navigation__item {
   font-size: 26px;
   padding-bottom: 15px;
-  
+
 }
 
 .navigation__link {
   text-decoration: none;
   color: $secondary-gold;
   font-size: 22px;
-  
- 
+
+
 
   &:hover {
     color: $secondary-gold;
@@ -198,11 +203,11 @@
 
   @keyframes nav-wake {
     0% {
-        transform: translateY(-200px);
+      transform: translateY(-200px);
     }
-  
+
     100% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
   }
 
@@ -234,6 +239,6 @@
   }
 }
 
-.header_js{
+.header_js {
   display: none;
 }

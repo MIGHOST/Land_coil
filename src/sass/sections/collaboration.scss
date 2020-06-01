@@ -1,48 +1,29 @@
 .contacts-form-sec {
   background-image: url(../images/contacts-form-sec/contacts-background.jpg);
-
-  text-align: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+ 
 }
 
 .contacts-form-sec__wrapper {
-  width: 280px;
+  width: 292px;
   margin: 0 auto;
   text-align: center;
-  padding: 50px 0;
-
   @media (min-width: 768px) {
     width: 708px;
   }
 
   @media (min-width: 1200px) {
-    width: 1145px;
+    width: 1118px;
   }
 }
-// .collaboration-box{
-//   display: inline-block;
-//   width: 292px;
-//   margin: 0 auto;
-//   text-align: center;
-//   padding: 50px 0;
 
-
-//   @media (min-width: 768px) {
-//     width: 708px;
-//   }
-
-//   @media (min-width: 1200px) {
-//     width: 1145px;
-//   }
-// }
-
-.contacts-form-sec__title {
-  margin-bottom: 20px;
-  color: $primary-aqua;
-  font-family: 'Helvetica Neue';
-}
 
 .contact-form {
   display: flex;
@@ -146,8 +127,6 @@
   }
 }
 
-
-
 .input-textarea,
 .input-name,
 .input-email {
@@ -158,35 +137,30 @@
 }
 
 .input-textarea::placeholder {
-  // font-weight: 700;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: #c1c1c1;
   line-height: 1.5;
   text-align: left;
-  // padding-left: 20px;
-  // padding-top: 20px;
 }
 
 .input-name::placeholder {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  ;
+  font-family: 'Montserrat', sans-serif; 
   color: #c1c1c1;
   line-height: 1.5;
   text-align: left;
-  // padding-left: 20px;
+
 }
 
 .input-email::placeholder {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  ;
   color: #c1c1c1;
   line-height: 1.5;
   text-align: left;
-  // padding-left: 20px;
+
 }
 
 .submit-btn {
@@ -223,8 +197,61 @@
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
-    // padding-top: 20px;
+    flex-direction: row-reverse; 
   }
 }
+
+// .sec-title__collaboration{  
+//   margin: 0 auto;
+//   font-size: 18px;
+//   font-family: 'Helvetica Neue';  
+//   color: $primary-aqua;
+//   font-weight: 700;
+//   line-height: 1.286;
+//   text-align: center;
+//   text-transform: uppercase;
+//   position: relative;
+//   width: 160px;
+//   margin-bottom: 30px;
+  
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: -80px;
+//     background-color: $secondary-gold;
+//     opacity: 0.4;
+//     width: 60px;
+//     height: 2px;
+//   }
+
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     right: -85px;
+//     background-color: $secondary-gold;
+//     opacity: 0.4;
+//     width: 60px;
+//     height: 2px;
+//   }
+  
+
+//   @media (min-width: 768px) {
+//     font-size: 28px;
+//     width: 210px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     font-size: 28px;
+//     width: 210px;
+
+//     &:before {    
+//       right: -145px;
+ 
+//     }
+    
+//   }
+ 
+// }
 

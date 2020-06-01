@@ -3,33 +3,34 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
   
-}
-.feedback__tittle{
-  font-family: 'Helvetica Neue';
 }
 
 .feedback__wrapper {
   width: 292px;
   margin: 0 auto;
   text-align: center;
-  padding: 50px 0;
-
 
   @media (min-width: 768px) {
     width: 708px;
   }
 
   @media (min-width: 1200px) {
-    width: 1145px;
+    width: 1118px;
   }
 }
 
 .feedback__tittle {
   margin-bottom: 50px;
+  font-family: 'Helvetica Neue';
 
   @media (min-width: 768px) {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
     width: fit-content;
   }
 }
@@ -42,8 +43,6 @@
 
 }
 
-
-
 .tilesWrap li {
   display: inline-block;
   width: 20%;
@@ -54,11 +53,11 @@
   vertical-align: top;
   margin: 20px;
   font-family: 'Helvetica Neue';
-
   min-height: 25vh;
   background: #262a2b;
   border: 1px solid #252727;
   text-align: left; 
+
   &:hover{
     transform: scale(1.1);
   } 
@@ -147,8 +146,9 @@
 }
 
 .tilesWrap li:hover h3 {
- text-align: center;
+  text-align: center;
 }
+
 .text-service {
   text-align: center;
   font-weight: normal;

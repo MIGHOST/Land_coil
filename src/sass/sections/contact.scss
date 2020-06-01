@@ -10,27 +10,30 @@
   flex-direction: column;
 
   @media (min-width: 1200px) {
-    flex-direction: row;   
+    flex-direction: row;
     padding: 55px;
     width: 1000px;
   }
 
 }
-.cont-title{
+
+.cont-title {
   margin-bottom: 20px;
 }
+
 .contacts-title {
   font-size: 26px;
   font-family: 'Helvetica Neue';
   color: $secondary-gold;
   line-height: 1;
- 
+
   margin-bottom: 10px;
 }
 
-  .contact__subtitle{
-    padding: 0 25px;
-    letter-spacing: 0.01px; }
+.contact__subtitle {
+  padding: 0 25px;
+  letter-spacing: 0.01px;
+}
 
 
 .footer-rights {
@@ -48,7 +51,7 @@
 
 .footer-rights-wrapper {
   text-align: center;
-  width: 100%; 
+  width: 100%;
   border-top: 1px solid $primary-aqua;
   margin: 0 auto;
   margin-top: 20px;
@@ -108,8 +111,10 @@
   position: relative;
   z-index: 3;
   background-color: #007ab9;
-  @media (min-width: 1200px){
-    margin-bottom: 15px;;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+    ;
   }
 }
 
@@ -174,6 +179,7 @@
   margin: 0;
   padding: 0;
   margin-top: 10px;
+
   @media (min-width: 1200px) {
     text-align: left;
     margin: 0;
