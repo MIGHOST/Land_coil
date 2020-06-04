@@ -66,6 +66,12 @@ var navMenuUa = document.querySelector("#nav-menu-ua");
 var navMenuRu = document.querySelector("#nav-menu-ru");
 var navMenuUaTab = document.querySelector("#nav-menu-ua-tab");
 var navMenuRuTab = document.querySelector("#nav-menu-ru-tab");
+var formCollaborationUa = document.querySelector("#form-collaboration-ua");
+var formCollaborationRu = document.querySelector("#form-collaboration-ru");
+var serviceUa = document.querySelector("#service-ua");
+var serviceRu = document.querySelector("#service-ru");
+var orderUa = document.querySelector("#order-from-ua");
+var orderRu = document.querySelector("#order-from-ru");
 
 if (window.location.hash) {
   if (window.location.hash === "#ru") {
@@ -102,6 +108,12 @@ if (window.location.hash) {
     navMenuRu.classList.remove("js-block");
     navMenuUaTab.classList.add("js-block");
     navMenuRuTab.classList.remove("js-block");
+    formCollaborationUa.classList.add("js-block");
+    formCollaborationRu.classList.remove("js-block");
+    serviceUa.classList.add("js-block");
+    serviceRu.classList.remove("js-block");
+    orderUa.classList.add("js-block");
+    orderRu.classList.remove("js-block");
   }
 }
 "use strict";
@@ -146,10 +158,12 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 "use strict";
+"use strict";
 
 var menu = document.querySelector('.navigation__container');
 var nav = document.querySelector('.navigation');
 var list = document.querySelector('.navigation__list');
+var listRu = document.querySelector(".navigation__list-ru");
 var check = document.querySelector('#checkbox');
 
 var showMenu = function showMenu(e) {
@@ -159,6 +173,7 @@ var showMenu = function showMenu(e) {
 };
 
 list.addEventListener("click", showMenu);
+listRu.addEventListener("click", showMenu);
 'use strict';
 
 var slideShow = function () {

@@ -17,6 +17,10 @@
   animation: nav-wake 0.8s linear;
 }
 
+.chang_lang{
+  animation: nav-wake 0.8s linear;
+}
+
 
 @keyframes nav-wake {
   0% {
@@ -40,7 +44,6 @@
 .language_link {
   color: white;
   text-decoration: none;
-  animation: nav-wake 0.8s linear;
 }
 
 .logo__link {

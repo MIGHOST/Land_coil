@@ -43,6 +43,7 @@ const language = {
   },
 };
 
+
 const mainTitle = document.querySelector(".intro_title");
 const introSubTitleMainText = document.querySelector(".intro_subtitle");
 const introItem1 = document.querySelector(".intro_item1");
@@ -77,7 +78,12 @@ const navMenuUa = document.querySelector("#nav-menu-ua");
 const navMenuRu = document.querySelector("#nav-menu-ru");
 const navMenuUaTab = document.querySelector("#nav-menu-ua-tab");
 const navMenuRuTab = document.querySelector("#nav-menu-ru-tab");
-
+const formCollaborationUa = document.querySelector("#form-collaboration-ua")
+const formCollaborationRu = document.querySelector("#form-collaboration-ru")
+const serviceUa = document.querySelector("#service-ua");
+const serviceRu = document.querySelector("#service-ru");
+const orderUa = document.querySelector("#order-from-ua");
+const orderRu = document.querySelector("#order-from-ru")
 
 if (window.location.hash) {
   if (window.location.hash === "#ru") {
@@ -114,7 +120,12 @@ if (window.location.hash) {
     navMenuRu.classList.remove("js-block");
     navMenuUaTab.classList.add("js-block");
     navMenuRuTab.classList.remove("js-block");
-
+    formCollaborationUa.classList.add("js-block");
+    formCollaborationRu.classList.remove("js-block");
+    serviceUa.classList.add("js-block");
+    serviceRu.classList.remove("js-block");
+    orderUa.classList.add("js-block");
+    orderRu.classList.remove("js-block");
   }
 }
  
