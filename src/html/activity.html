@@ -38,7 +38,7 @@
     <!-- Table -->
     <h3 class="activity__price-title price-title">Прайс-лист</h3>
     <div class="mobile-table">
-      <table class="cwd">
+      <table class="cwd" id="table_ua">
         <thead>
           <tr>
             <th>Найменування вугілля</th>
@@ -79,6 +79,50 @@
 
         </tbody>
       </table>
+
+      <table class="cwd js-block" id="table_ru">
+        <thead>
+          <tr>
+            <th>Наименование угля
+            </th>
+            <th>Навалом * 1т. / Грн. с НДС
+            </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Антрацит мелкий <br>(АМ) (13-25)</td>
+            <td>6500</td>
+          </tr>
+          <tr>
+            <td>Антрацит орех (АО) (25-70)</td>
+            <td>7200</td>
+
+          </tr>
+          <tr>
+            <td>Каменный марки (ДГ) <br>фракция (13-100)</td>
+            <td>4500</td>
+
+          </tr>
+          <tr>
+            <td>Брикет RUF дуб (евро))</td>
+            <td>4500</td>
+
+          </tr>
+          <tr>
+            <td>Пеллеты сосна<br>(гранула 6-8 мм.)</td>
+            <td>3200<br>биг-бэг</td>
+
+          </tr>
+          <tr>
+            <td>Пеллеты сосна<br> (гранула 6-8 мм.)</td>
+            <td>3600<br>мешок(15кг)</td>
+
+          </tr>
+
+        </tbody>
+      </table>
     </div>
 
     <p class="list-item__text">*Ціни по кожному окремому замовленню розглядаються в індивідуальному порядку в
@@ -103,7 +147,6 @@
           <li class="form_list_item"><input type="tel" class="text_form" required name="phone"
               placeholder="Ваш номер телефону">
           </li>
-
         </ul>
 
         <button class="sent_button">Залишити замовлення</button>

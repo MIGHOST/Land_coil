@@ -34,68 +34,49 @@
           <div class="navigation__icon"></div>
         </label>
         <div class="navigation__container">
-          <ul class="navigation__list ">
-            <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">Про
-                компанію</a></li>
-            <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукція</a></li>
-            <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Послуги</a></li>
-            <li class="navigation__item "><a href="#contacts-form-sec" class="navigation__link link-nav">Співпраця</a>
-            </li>
-            <li class="navigation__item"><a href="#contacts"
-              class="navigation__link link link-nav">Контакти</a></li>
-          </ul>
+          <div id="nav-menu-ua">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">Про
+                  компанію</a></li>
+              <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукція</a></li>
+              <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Послуги</a></li>
+              <li class="navigation__item "><a href="#contacts-form-sec" class="navigation__link link-nav">Співпраця</a>
+              </li>
+              <li class="navigation__item"><a href="#contacts" class="navigation__link link link-nav">Контакти</a></li>
+            </ul>
+          </div>
+          <div id="nav-menu-ru" class="js-block">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">О
+                  Компании</a></li>
+              <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукция </a></li>
+              <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Услуги</a></li>
+              <li class="navigation__item "><a href="#contacts-form-sec"
+                  class="navigation__link link-nav">Сотрудничество</a>
+              </li>
+              <li class="navigation__item"><a href="#contacts" class="navigation__link link link-nav">Контакты</a></li>
+            </ul>
+          </div>
         </div>
   
       </nav>
       <!-- tablet -->
       <div class="navigation__container-tablet ">
-        <ul class="navigation__list-tablet link">
-          <li class="navigation__item-tablet"><a href="#" class="navigation__link-tablet link link-nav">Про компанію</a>
-          </li>
-          <li class="navigation__item-tablet "><a href="#activity"
-              class="navigation__link-tablet link link-nav">Продукція</a></li>
-          <li class="navigation__item-tablet"><a href="#feedback"
-              class="navigation__link-tablet link link-nav">Послуги</a></li>
-          <li class="navigation__item-tablet"><a href="#contacts-form-sec"
-              class="navigation__link-tablet link link-nav">Співпраця</a></li>
-          <li class="navigation__item-tablet"><a href="#contacts"
-              class="navigation__link-tablet link link-nav">Контакти</a></li>
-        </ul>
-      </div>
-    </div>
-  
-  </header>
-  
-   <!-- Header--Р -->
-    <header class="header header_js">
-      <div class="container header-container">
-    
-        <!-- logo -->
-        <div class="logo">
-          <img alt="logo" src="images/Logo/LogoR.jpg" width="120" height="80" class="logo-img">
+        <div id="nav-menu-ua-tab">
+          <ul class="navigation__list-tablet link">
+            <li class="navigation__item-tablet"><a href="#" class="navigation__link-tablet link link-nav">Про компанію</a>
+            </li>
+            <li class="navigation__item-tablet "><a href="#activity"
+                class="navigation__link-tablet link link-nav">Продукція</a></li>
+            <li class="navigation__item-tablet"><a href="#feedback"
+                class="navigation__link-tablet link link-nav">Послуги</a></li>
+            <li class="navigation__item-tablet"><a href="#contacts-form-sec"
+                class="navigation__link-tablet link link-nav">Співпраця</a></li>
+            <li class="navigation__item-tablet"><a href="#contacts"
+                class="navigation__link-tablet link link-nav">Контакти</a></li>
+          </ul>
         </div>
-    
-        <!-- menu -->
-        <nav class="navigation">
-          <input type="checkbox" id="checkbox" class="navigation__checkbox">
-          <label for="checkbox" class="navigation__btn" id="check">
-            <div class="navigation__icon"></div>
-          </label>
-          <div class="navigation__container">
-            <ul class="navigation__list ">
-              <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">О Компании</a></li>
-              <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукция </a></li>
-              <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Услуги</a></li>
-              <li class="navigation__item "><a href="#contacts-form-sec" class="navigation__link link-nav">Сотрудничество</a>
-              </li>
-              <li class="navigation__item"><a href="#contacts"
-                class="navigation__link link link-nav">Контакты</a></li>
-            </ul>
-          </div>
-    
-        </nav>
-        <!-- tablet -->
-        <div class="navigation__container-tablet ">
+        <div id="nav-menu-ru-tab" class="js-block">
           <ul class="navigation__list-tablet link">
             <li class="navigation__item-tablet"><a href="#" class="navigation__link-tablet link link-nav">О Компании</a>
             </li>
@@ -110,8 +91,8 @@
           </ul>
         </div>
       </div>
-    
-    </header>
+    </div>
+  </header>
   <section class="intro">
     <div class="container intro_container">
       <div class="intro_block">
@@ -182,7 +163,7 @@
       <!-- Table -->
       <h3 class="activity__price-title price-title">Прайс-лист</h3>
       <div class="mobile-table">
-        <table class="cwd">
+        <table class="cwd" id="table_ua">
           <thead>
             <tr>
               <th>Найменування вугілля</th>
@@ -223,6 +204,50 @@
   
           </tbody>
         </table>
+  
+        <table class="cwd js-block" id="table_ru">
+          <thead>
+            <tr>
+              <th>Наименование угля
+              </th>
+              <th>Навалом * 1т. / Грн. с НДС
+              </th>
+  
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Антрацит мелкий <br>(АМ) (13-25)</td>
+              <td>6500</td>
+            </tr>
+            <tr>
+              <td>Антрацит орех (АО) (25-70)</td>
+              <td>7200</td>
+  
+            </tr>
+            <tr>
+              <td>Каменный марки (ДГ) <br>фракция (13-100)</td>
+              <td>4500</td>
+  
+            </tr>
+            <tr>
+              <td>Брикет RUF дуб (евро))</td>
+              <td>4500</td>
+  
+            </tr>
+            <tr>
+              <td>Пеллеты сосна<br>(гранула 6-8 мм.)</td>
+              <td>3200<br>биг-бэг</td>
+  
+            </tr>
+            <tr>
+              <td>Пеллеты сосна<br> (гранула 6-8 мм.)</td>
+              <td>3600<br>мешок(15кг)</td>
+  
+            </tr>
+  
+          </tbody>
+        </table>
       </div>
   
       <p class="list-item__text">*Ціни по кожному окремому замовленню розглядаються в індивідуальному порядку в
@@ -247,7 +272,6 @@
             <li class="form_list_item"><input type="tel" class="text_form" required name="phone"
                 placeholder="Ваш номер телефону">
             </li>
-  
           </ul>
   
           <button class="sent_button">Залишити замовлення</button>

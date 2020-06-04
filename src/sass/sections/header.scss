@@ -37,6 +37,12 @@
   margin: 0 auto;
 }
 
+.language_link {
+  color: white;
+  text-decoration: none;
+  animation: nav-wake 0.8s linear;
+}
+
 .logo__link {
   font-family: 'Raleway-SemiBold';
   font-size: 22px;
@@ -54,11 +60,6 @@
 
   }
 }
-
-.language_link {
-  color: white;
-}
-
 // burger-menu
 
 .navigation__btn {
@@ -141,14 +142,10 @@
   color: $secondary-gold;
   font-size: 22px;
 
-
-
   &:hover {
     color: $secondary-gold;
   }
 }
-
-
 
 .navigation__checkbox {
   display: none;
@@ -210,10 +207,6 @@
       transform: translateY(0);
     }
   }
-
-  // .logo-img {
-  //   m-right: 10px;
-  // }
 
   .navigation__item-tablet:not(:first-child) {
     padding-left: 20px;

@@ -60,6 +60,12 @@ var addressItem2 = document.querySelector(".address-item2");
 var addressItem3 = document.querySelector(".address-item3");
 var addressItem4 = document.querySelector(".address-item4");
 var footerRights = document.querySelector(".footer-rights");
+var tableUa = document.querySelector("#table_ua");
+var tableRu = document.querySelector("#table_ru");
+var navMenuUa = document.querySelector("#nav-menu-ua");
+var navMenuRu = document.querySelector("#nav-menu-ru");
+var navMenuUaTab = document.querySelector("#nav-menu-ua-tab");
+var navMenuRuTab = document.querySelector("#nav-menu-ru-tab");
 
 if (window.location.hash) {
   if (window.location.hash === "#ru") {
@@ -90,6 +96,12 @@ if (window.location.hash) {
     addressItem3.textContent = language.ru.addressItem3;
     addressItem4.textContent = language.ru.addressItem4;
     footerRights.textContent = language.ru.footerRights;
+    tableUa.classList.add("js-block");
+    tableRu.classList.remove("js-block");
+    navMenuUa.classList.add("js-block");
+    navMenuRu.classList.remove("js-block");
+    navMenuUaTab.classList.add("js-block");
+    navMenuRuTab.classList.remove("js-block");
   }
 }
 "use strict";
