@@ -30,14 +30,14 @@ const watcher = done => {
   done();
 };
 
-const netlify = require('gulp-netlify')
-gulp.task('deploy', function () {
-  gulp.src('./public/**/*')
-    .pipe(netlify({
-      site_id: NETLIFY_SITE_ID,
-      access_token: NETLIFY_ACCESS_TOKEN
-    }))
-})
+// const netlify = require('gulp-netlify')
+// gulp.task('deploy', function () {
+//   gulp.src('./public/**/*')
+//     .pipe(netlify({
+//       site_id: NETLIFY_SITE_ID,
+//       access_token: NETLIFY_ACCESS_TOKEN
+//     }))
+// })
 
 exports.start = series(
   tasks.clean,
