@@ -42,7 +42,7 @@
   width: 292px;
   font-size: 14px;
   font-family: 'Helvetica Neue';
-  color: $blue;
+  color: $secondary-colour;
   line-height: 1.5;
   text-align: center;
   padding-bottom: 25px;
@@ -52,18 +52,10 @@
 .footer-rights-wrapper {
   text-align: center;
   width: 100%;
-  border-top: 1px solid $primary-aqua;
+  border-top: 1px solid $primary-colour;
   margin: 0 auto;
   margin-top: 20px;
   padding-top: 20px;
-
-  // @media (min-width: 768px) {
-  //   width: auto;
-  // }
-
-  // @media (min-width: 1200px) {
-  //   width: auto;
-  // }
 }
 
 .our-contacts {
@@ -76,9 +68,7 @@
   @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     margin-right: 100px;
-    // width: 450px;
     text-align: left;
   }
 }
@@ -119,7 +109,7 @@
 }
 
 .socials-item:hover {
-  background-color: $blue;
+  background-color: $secondary-colour;
   cursor: pointer;
   transition: all 400ms linear;
 }

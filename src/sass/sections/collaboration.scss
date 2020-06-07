@@ -4,9 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 25px;
-
-
-
 }
 
 .contacts-form-sec__wrapper {
@@ -52,7 +49,7 @@
 
     @media (min-width: 1200px) {
       font-size: 32px;
-      line-height: 1.2;    
+      line-height: 1.2;
     }
 
   }
@@ -160,7 +157,7 @@
 
 .submit-btn {
   border-radius: 3px;
-  background-color: $blue;
+  background-color: $secondary-colour;
   width: 170px;
   height: 50px;
   border: none;
@@ -196,13 +193,13 @@
   margin: 30px auto;
   font-size: 18px;
   font-family: 'Helvetica Neue';
-  color: $primary-aqua;
+  color: $primary-colour;
   font-weight: 700;
   line-height: 1.286;
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  width: 180px; 
+  width: 180px;
 
   &::after {
     content: '';
