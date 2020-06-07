@@ -163,7 +163,7 @@ function ajax(method, url, data, success, error) {
 var menu = document.querySelector('.navigation__container');
 var nav = document.querySelector('.navigation');
 var list = document.querySelector('.navigation__list');
-var listRu = document.querySelector(".navigation__list-ru");
+var listRu = document.querySelector('.navigation__list-ru');
 var check = document.querySelector('#checkbox');
 
 var showMenu = function showMenu(e) {
@@ -172,8 +172,8 @@ var showMenu = function showMenu(e) {
   }
 };
 
-list.addEventListener("click", showMenu);
-listRu.addEventListener("click", showMenu);
+list.addEventListener('click', showMenu);
+listRu.addEventListener('click', showMenu);
 'use strict';
 
 var slideShow = function () {
@@ -446,3 +446,32 @@ var slideShow = function () {
 slideShow('.slider', {
   isAutoplay: true
 });
+"use strict";
+
+var scrollButton = document.getElementById('scrollBtn');
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+var scrollFunction = function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+};
+
+var scrollToTop = function scrollToTop() {
+  var c = document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 10);
+  }
+};
+
+scrollButton.onclick = function (e) {
+  e.preventDefault();
+  scrollToTop();
+};
