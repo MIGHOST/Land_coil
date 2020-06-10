@@ -17,7 +17,7 @@ function sendWithPhpMailer($email,$name,$phone) {
     $mail->setFrom('oliver_knan@i.ua', 'oliver_knan@i.ua');
     $mail->addAddress('oliver_knan@i.ua','Адмін');
     $mail->isHTML(true);
-    $mail->Subject = 'Заявка с сайта https://komanda.kamerton.club/';
+    $mail->Subject = 'Заявка с сайта';
     $mail->Body = 'Пользователь ' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;;
     if(!$mail->send()) {
         return json_encode($mail->ErrorInfo);
