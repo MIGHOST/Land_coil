@@ -94,8 +94,7 @@
 .input-name,
 .input-email {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;  
   padding-left: 15px;
   border-radius: 3px;
   background-color: $primary-white;
@@ -105,6 +104,12 @@
   @media (min-width: 768px) {
     width: 48%;
   }
+
+}
+
+.placeholder::placeholder {
+
+  text-transform: uppercase;
 
 }
 

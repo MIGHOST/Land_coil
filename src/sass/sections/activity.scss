@@ -262,7 +262,6 @@ table.cwd tr:hover th {
 
 .text_form {
   font-size: 12px;
-  text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
   color: #000000;
@@ -281,6 +280,10 @@ table.cwd tr:hover th {
 
   }
 
+}
+
+.text_form::placeholder{
+  text-transform: uppercase;
 }
 
 .text_form[type="text"],

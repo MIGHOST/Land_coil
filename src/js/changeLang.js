@@ -43,7 +43,6 @@ const language = {
   },
 };
 
-
 const mainTitle = document.querySelector(".intro_title");
 const introSubTitleMainText = document.querySelector(".intro_subtitle");
 const introItem1 = document.querySelector(".intro_item1");

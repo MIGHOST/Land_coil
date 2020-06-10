@@ -158,7 +158,6 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 "use strict";
-"use strict";
 
 var menu = document.querySelector('.navigation__container');
 var nav = document.querySelector('.navigation');
