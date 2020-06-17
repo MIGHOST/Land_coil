@@ -10,7 +10,7 @@ function sendWithPhpMailer($email,$name,$phone) {
     $mail->Host = 'smtp.i.ua';
     $mail->SMTPAuth = true;
     $mail->Username = 'oliver_knan@i.ua';
-    $mail->Password = 'sotoxaf82';
+    $mail->Password = '1111';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
