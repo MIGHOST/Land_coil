@@ -1,5 +1,21 @@
 "use strict";
 
+var menu = document.querySelector('.navigation__container');
+var nav = document.querySelector('.navigation');
+var list = document.querySelector('.navigation__list');
+var listRu = document.querySelector('.navigation__list-ru');
+var check = document.querySelector('#checkbox');
+
+var showMenu = function showMenu(e) {
+  if (e.target) {
+    check.checked = false;
+  }
+};
+
+list.addEventListener('click', showMenu);
+listRu.addEventListener('click', showMenu);
+"use strict";
+
 var language = {
   ru: {
     introTitle: "\u041E\u0411\u0429\u0415\u0421\u0422\u0412\u041E \u0421 \u041E\u0413\u0420\u0410\u041D\u0418\u0427\u0415\u041D\u041D\u041E\u0419 \u041E\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0415\u041D\u041D\u041E\u0421\u0422\u042C\u042E\n        \xAB\u0415\u0414\u0418\u041D\u042B\u0415 \u0422\u041E\u041F\u041B\u0418\u0412\u041D\u042B\u0415 \u0421\u0418\u0421\u0422\u0415\u041C\u042B \u0423\u041A\u0420\u0410\u0418\u041D\u042B\xBB",
@@ -151,22 +167,6 @@ function ajax(method, url, data, success, error) {
 
   xhr.send(data);
 }
-"use strict";
-
-var menu = document.querySelector('.navigation__container');
-var nav = document.querySelector('.navigation');
-var list = document.querySelector('.navigation__list');
-var listRu = document.querySelector('.navigation__list-ru');
-var check = document.querySelector('#checkbox');
-
-var showMenu = function showMenu(e) {
-  if (e.target) {
-    check.checked = false;
-  }
-};
-
-list.addEventListener('click', showMenu);
-listRu.addEventListener('click', showMenu);
 'use strict';
 
 var slideShow = function () {
