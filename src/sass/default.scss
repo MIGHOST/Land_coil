@@ -25,10 +25,10 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: -75px;
+  right: -65px;
   background-color: $secondary-gold;
   opacity: 0.4;
-  width: 60px;
+  width: 50px;
   height: 2px;
 }
 
@@ -36,10 +36,10 @@
   content: '';
   position: absolute;
   top: 50%;
-  left: -75px;
+  left: -65px;
   background-color: $secondary-gold;
   opacity: 0.4;
-  width: 60px;
+  width: 50px;
   height: 2px;
 }
 
@@ -78,20 +78,21 @@
 }
 
 #scrollBtn {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   bottom: 20px;
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  color: $secondary-colour; 
-  cursor: pointer; 
-  padding: 12px; 
-  border-radius: 50%; 
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: $secondary-colour;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 48%;
   font-size: 18px;
-  background-color: black; 
+  background-color: $dark-gray;
+
   &:hover {
-    background-color: rgb(44, 42, 42); /* Add a dark-grey background on hover */
+    background-color: rgb(70, 66, 66);
   }
 }

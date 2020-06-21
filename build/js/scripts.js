@@ -1,5 +1,21 @@
 "use strict";
 
+var menu = document.querySelector('.navigation__container');
+var nav = document.querySelector('.navigation');
+var list = document.querySelector('.navigation__list');
+var listRu = document.querySelector('.navigation__list-ru');
+var check = document.querySelector('#checkbox');
+
+var showMenu = function showMenu(e) {
+  if (e.target) {
+    check.checked = false;
+  }
+};
+
+list.addEventListener('click', showMenu);
+listRu.addEventListener('click', showMenu);
+"use strict";
+
 var language = {
   ru: {
     introTitle: "\u041E\u0411\u0429\u0415\u0421\u0422\u0412\u041E \u0421 \u041E\u0413\u0420\u0410\u041D\u0418\u0427\u0415\u041D\u041D\u041E\u0419 \u041E\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0415\u041D\u041D\u041E\u0421\u0422\u042C\u042E\n        \xAB\u0415\u0414\u0418\u041D\u042B\u0415 \u0422\u041E\u041F\u041B\u0418\u0412\u041D\u042B\u0415 \u0421\u0418\u0421\u0422\u0415\u041C\u042B \u0423\u041A\u0420\u0410\u0418\u041D\u042B\xBB",
@@ -13,9 +29,7 @@ var language = {
     activityTitle: 'Продукция',
     activityDescription: "\u0423 \u043D\u0430\u0441 \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0440\u0438\u043E\u0431\u0440\u0435\u0441\u0442\u0438, \u043A\u0430\u043C\u0435\u043D\u043D\u044B\u0439 \u0443\u0433\u043E\u043B\u044C (\u0441\u043E\u0440\u0442\u043E\u0432\u043E\u0439 \u0438 \u0440\u044F\u0434\u043E\u0432\u043E\u0439) \u043C\u0430\u0440\u043E\u043A \u0414\u0413, \u0422, \u0422\u041C,\n    \u0410\u041E, \u0414\u0413\u0420, \u0410\u0421, \u0410\u041E, \u0421\u0421, \u0413(\u04132)\u0420 (0-200), \u0413\u0416\u0420 (0-200) \u043E\u043F\u0442\u043E\u043C \u0438 \u0432 \u0440\u043E\u0437\u043D\u0438\u0446\u0443. \u041A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u043C\n    \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u0430 \u0438 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C, \u0447\u0442\u043E \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u043E \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u0430\u043C\u0438 \u0438 \u043E\u0431\u0443\u0441\u043B\u043E\u0432\u043B\u0435\u043D\u043E\n    \u043C\u043D\u043E\u0433\u043E\u043B\u0435\u0442\u043D\u0438\u043C \u0434\u0435\u043B\u043E\u0432\u044B\u043C \u043F\u0430\u0440\u0442\u043D\u0435\u0440\u0441\u0442\u0432\u043E\u043C \u0441 \u0432\u0435\u0434\u0443\u0449\u0438\u043C\u0438 \u0443\u0433\u043B\u0435\u0434\u043E\u0431\u044B\u0432\u0430\u044E\u0449\u0438\u043C\u0438 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u044F\u043C\u0438 \u0423\u043A\u0440\u0430\u0438\u043D\u044B.",
     activityPriceTitle: "\u041F\u0440\u0430\u0439\u0441-\u043B\u0438\u0441\u0442",
-    activityPriceTitle2: "Форма заказа",
     listItemText: "* \u0426\u0435\u043D\u044B \u043F\u043E \u043A\u0430\u0436\u0434\u043E\u043C\u0443 \u0437\u0430\u043A\u0430\u0437\u0443 \u0440\u0430\u0441\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u0432 \u0438\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u043E\u043C \u043F\u043E\u0440\u044F\u0434\u043A\u0435 \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u043E\u0431\u044A\u0435\u043C\u0430\n    \u0437\u0430\u043A\u0430\u0437\u0430, \u0444\u0430\u0441\u043E\u0432\u043A\u0438 (\u043C\u0435\u0448\u043E\u043A, \u0431\u0438\u0433-\u0431\u0435\u0433) \u0438 \u0443\u0441\u043B\u043E\u0432\u0438\u0439 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438!",
-    sentButton: "Оставить заказ",
     feedbackTittle: "Наши услуги",
     contactsTitle: "\u0421\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u043E",
     colaborationText1: " \u041F\u0440\u0438\u043E\u0440\u0438\u0442\u0435\u0442\u043D\u044B\u043C \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043C \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435 \u0440\u044B\u043D\u043A\u0430 \u0441\u0431\u044B\u0442\u0430 \u0433\u043E\u0442\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438 \u0437\u0430 \u0441\u0447\u0435\u0442\n    \u043F\u0440\u0438\u0432\u043B\u0435\u0447\u0435\u043D\u0438\u044F \u043D\u043E\u0432\u044B\u0445 \u043F\u0430\u0440\u0442\u043D\u0435\u0440\u043E\u0432 \u043F\u043E \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u0442\u0432\u0435\u0440\u0434\u043E\u0433\u043E \u0442\u043E\u043F\u043B\u0438\u0432\u0430.",
@@ -43,9 +57,7 @@ var introBottomTxt = document.querySelector(".intro_bottomText");
 var activityTitle = document.querySelector(".activity__title");
 var activityDescription = document.querySelector(".activity__description");
 var activityPriceTitle = document.querySelector(".price-title");
-var activityPriceTitle2 = document.querySelector(".price-title2");
 var listItemText = document.querySelector(".list-item__text");
-var sentButton = document.querySelector(".sent_button");
 var feedbackTittle = document.querySelector(".feedback__tittle");
 var contactsTitle = document.querySelector(".sec-title__collaboration");
 var colaborationText1 = document.querySelector(".colaboration_text1");
@@ -85,9 +97,7 @@ if (window.location.hash) {
     activityTitle.textContent = language.ru.activityTitle;
     activityDescription.textContent = language.ru.activityDescription;
     activityPriceTitle.textContent = language.ru.activityPriceTitle;
-    activityPriceTitle2.textContent = language.ru.activityPriceTitle2;
     listItemText.textContent = language.ru.listItemText;
-    sentButton.textContent = language.ru.sentButton;
     feedbackTittle.textContent = language.ru.feedbackTittle;
     contactsTitle.textContent = language.ru.contactsTitle;
     colaborationText1.textContent = language.ru.colaborationText1;
@@ -116,63 +126,39 @@ if (window.location.hash) {
     orderRu.classList.remove("js-block");
   }
 }
+// window.addEventListener("DOMContentLoaded", function() {    
+//     var form = document.getElementById("my-form");
+//     var button = document.getElementById("my-form-button");
+//     var status = document.getElementById("my-form-status");    
+//     function success() {
+//       form.reset();
+//       button.style = "display: none ";
+//       status.innerHTML = "Thanks!";
+//     }
+//     function error() {
+//       status.innerHTML = "Oops! There was a problem.";
+//     }
+//     form.addEventListener("submit", function(ev) {
+//       ev.preventDefault();
+//       var data = new FormData(form);
+//       ajax(form.method, form.action, data, success, error);
+//     });
+//   });
+//   function ajax(method, url, data, success, error) {
+//     var xhr = new XMLHttpRequest();
+//     xhr.open(method, url);
+//     xhr.setRequestHeader("Accept", "application/json");
+//     xhr.onreadystatechange = function() {
+//       if (xhr.readyState !== XMLHttpRequest.DONE) return;
+//       if (xhr.status === 200) {
+//         success(xhr.response, xhr.responseType);
+//       } else {
+//         error(xhr.status, xhr.response, xhr.responseType);
+//       }
+//     };
+//     xhr.send(data);
+//   }
 "use strict";
-
-window.addEventListener("DOMContentLoaded", function () {
-  var form = document.getElementById("my-form");
-  var button = document.getElementById("my-form-button");
-  var status = document.getElementById("my-form-status");
-
-  function success() {
-    form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Thanks!";
-  }
-
-  function error() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var data = new FormData(form);
-    ajax(form.method, form.action, data, success, error);
-  });
-}); // helper function for sending an AJAX request
-
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
-    }
-  };
-
-  xhr.send(data);
-}
-"use strict";
-
-var menu = document.querySelector('.navigation__container');
-var nav = document.querySelector('.navigation');
-var list = document.querySelector('.navigation__list');
-var listRu = document.querySelector('.navigation__list-ru');
-var check = document.querySelector('#checkbox');
-
-var showMenu = function showMenu(e) {
-  if (e.target) {
-    check.checked = false;
-  }
-};
-
-list.addEventListener('click', showMenu);
-listRu.addEventListener('click', showMenu);
 'use strict';
 
 var slideShow = function () {
@@ -474,3 +460,37 @@ scrollButton.onclick = function (e) {
   e.preventDefault();
   scrollToTop();
 };
+"use strict";
+
+$(document).ready(function () {
+  $("form").submit(function () {
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "../mail2.php",
+      data: th.serialize()
+    }).done(function () {
+      alert("Thank you!");
+      setTimeout(function () {
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+});
+"use strict";
+
+var menu = document.querySelector('.navigation__container');
+var nav = document.querySelector('.navigation');
+var list = document.querySelector('.navigation__list');
+var listRu = document.querySelector('.navigation__list-ru');
+var check = document.querySelector('#checkbox');
+
+var showMenu = function showMenu(e) {
+  if (e.target) {
+    check.checked = false;
+  }
+};
+
+list.addEventListener('click', showMenu);
+listRu.addEventListener('click', showMenu);

@@ -17,11 +17,9 @@ const language = {
     АО, ДГР, АС, АО, СС, Г(Г2)Р (0-200), ГЖР (0-200) оптом и в розницу. Качество продукции соответствует установленным
     требованиям государственного стандарта и техническим условиям, что подтверждено сертификатами и обусловлено
     многолетним деловым партнерством с ведущими угледобывающими предприятиями Украины.`,
-    activityPriceTitle: `Прайс-лист`,
-    activityPriceTitle2: "Форма заказа",
+    activityPriceTitle: `Прайс-лист`,    
     listItemText: `* Цены по каждому заказу рассматриваются в индивидуальном порядке в зависимости от объема
     заказа, фасовки (мешок, биг-бег) и условий доставки!`,
-    sentButton: "Оставить заказ",
     feedbackTittle: "Наши услуги",
     contactsTitle: `Сотрудничество`,
     colaborationText1: ` Приоритетным направлением развития компании является расширение рынка сбыта готовой продукции за счет
@@ -54,9 +52,7 @@ const introBottomTxt = document.querySelector(".intro_bottomText");
 const activityTitle = document.querySelector(".activity__title");
 const activityDescription = document.querySelector(".activity__description");
 const activityPriceTitle = document.querySelector(".price-title");
-const activityPriceTitle2 = document.querySelector(".price-title2");
 const listItemText = document.querySelector(".list-item__text");
-const sentButton = document.querySelector(".sent_button");
 const feedbackTittle = document.querySelector(".feedback__tittle");
 const contactsTitle = document.querySelector(".sec-title__collaboration")
 const colaborationText1 = document.querySelector(".colaboration_text1")
@@ -95,10 +91,8 @@ if (window.location.hash) {
     introBottomTxt.textContent = language.ru.introBottomTxt;
     activityTitle.textContent = language.ru.activityTitle;
     activityDescription.textContent = language.ru.activityDescription;
-    activityPriceTitle.textContent = language.ru.activityPriceTitle;
-    activityPriceTitle2.textContent = language.ru.activityPriceTitle2;
-    listItemText.textContent = language.ru.listItemText;
-    sentButton.textContent = language.ru.sentButton;
+    activityPriceTitle.textContent = language.ru.activityPriceTitle; 
+    listItemText.textContent = language.ru.listItemText;   
     feedbackTittle.textContent = language.ru.feedbackTittle;
     contactsTitle.textContent = language.ru.contactsTitle;
     colaborationText1.textContent = language.ru.colaborationText1;

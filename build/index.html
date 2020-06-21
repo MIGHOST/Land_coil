@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coal product</title>
-  
-  
-    <!-- inject:css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- endinject -->
-    <link rel="stylesheet" href="./css/styles.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coal product</title>
+
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- endinject -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
   <header class="header ">
     <div class="container header-container">
   
@@ -174,31 +175,31 @@
           <tbody>
             <tr>
               <td>Антрацит дрібний <br>(АМ) (13-25)</td>
-              <td>6500</td>
+              <td>6300</td>
             </tr>
             <tr>
               <td>Антрацит горіх (АО) (25-70)</td>
-              <td>7200</td>
+              <td>7000</td>
   
             </tr>
             <tr>
               <td>Кам’яне марки (ДГ) <br> фракція (13-100)</td>
-              <td>4500</td>
+              <td>4300</td>
   
             </tr>
             <tr>
               <td>Брикет RUF дуб (євро)</td>
-              <td>4500</td>
+              <td>4300</td>
   
             </tr>
             <tr>
               <td>Пілети сосна <br>(гранула 6-8 мм.)</td>
-              <td>3200<br>біг-бег</td>
+              <td>3000<br>біг-бег</td>
   
             </tr>
             <tr>
               <td>Пілети сосна <br> (гранула 6-8 мм.)</td>
-              <td>3600<br>мішок(15кг)</td>
+              <td>3400<br>мішок(15кг)</td>
   
             </tr>
   
@@ -212,38 +213,32 @@
               </th>
               <th>Навалом * 1т. / Грн. с НДС
               </th>
-  
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Антрацит мелкий <br>(АМ) (13-25)</td>
-              <td>6500</td>
+              <td>6300</td>
             </tr>
             <tr>
               <td>Антрацит орех (АО) (25-70)</td>
-              <td>7200</td>
-  
+              <td>7000</td>
             </tr>
             <tr>
               <td>Каменный марки (ДГ) <br>фракция (13-100)</td>
-              <td>4500</td>
-  
+              <td>4300</td>
             </tr>
             <tr>
               <td>Брикет RUF дуб (евро))</td>
-              <td>4500</td>
-  
+              <td>4300</td>
             </tr>
             <tr>
               <td>Пеллеты сосна<br>(гранула 6-8 мм.)</td>
-              <td>3200<br>биг-бэг</td>
-  
+              <td>3000<br>биг-бэг</td>
             </tr>
             <tr>
               <td>Пеллеты сосна<br> (гранула 6-8 мм.)</td>
-              <td>3600<br>мешок(15кг)</td>
-  
+              <td>3400<br>мешок(15кг)</td>
             </tr>
   
           </tbody>
@@ -253,33 +248,36 @@
       <p class="list-item__text">*Ціни по кожному окремому замовленню розглядаються в індивідуальному порядку в
         залежності від обсягу замовлення, фасування(мішок, біг-бег) та умов доставки!</p>
       <!-- Form -->
-      <div class="form_block">
-        <h2 class="activity__price-title price-title2">Форма замовлення</h2>
-        <form class="form_message" action="https://formspree.io/mdowzalj" method="POST">
-          <div id="order-from-ua">
-            <input type="text" class="text_form form_list_item" placeholder="Назва товару">
-            <input type="text" class="text_form form_list_item" placeholder="Кількість товару">
-            <input type="text" class="text_form form_list_item" placeholder="Місто доставки товару">
-            <input type="text" class="text_form form_list_item" required name="user_name"
-              placeholder="Ваше ім'я та прізвище">
-            <input type="email" class="text_form form_list_item" required name="e-mail" placeholder="Ваш e-mail*">
-            <input type="tel" class="text_form form_list_item" required name="phone" placeholder="Ваш номер телефону">
-          </div>
-          <div class="js-block" id="order-from-ru">
-            <input type="text" class="text_form form_list_item" placeholder="Название товара">
-            <input type="text" class="text_form form_list_item" placeholder="Колличество товара">
-            <input type="text" class="text_form form_list_item" placeholder="Город доставки товара">
-            <input type="text" class="text_form form_list_item" required name="user_name"
-              placeholder="Ваше имя и фамилиия">
-            <input type="email" class="text_form form_list_item" required name="e-mail" placeholder="Ваш e-mail*">
-            <input type="tel" class="text_form" required name="phone" placeholder="Ваш номер телефона">
-          </div>
-          <button class="sent_button">Залишити замовлення</button>
-  
-        </form>
-  
+      <div id="order-from-ua" class="form_block">     
+          <h2 class="activity__price-title price-title2">Форма замовлення</h2>
+            <form class="form_message">
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+            <input type="hidden" name="form_subject" value="Замовлення товару">
+            <input class="text_form form_list_item"  type="name" name="Товар" required placeholder="Назва товару*"  />
+            <input class="text_form form_list_item" type="name" name="Кількість" placeholder="Кількість товару" />
+            <input class="text_form form_list_item" type="name" name="Місто доставки" placeholder="Місто доставки товару" />
+            <input class="text_form form_list_item" type="user_name" name="user" required placeholder="Ваше ім'я та прізвище*" />
+            <input class="text_form form_list_item" type="email" name="email" required placeholder="Ваш e-mail*" />
+            <input class="text_form form_list_item" type="phone" required name="phone" placeholder="Ваш номер телефону*">    
+            <button class="sent_button">Надіслати заявку</button>   
+          </form> 
       </div>
-  
+      <div id="order-from-ru" class="form_block js-block">     
+        <h2 class="activity__price-title price-title2">Форма заказа</h2>
+        <form class="form_message">
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+          <input type="hidden" name="form_subject" value="Закакз товара">    
+          <input class="text_form form_list_item" type="name" name="Товар"  required placeholder="Название товара*"  />
+          <input class="text_form form_list_item" type="name" name="Колличество товара" placeholder="Колличество товара" />
+          <input class="text_form form_list_item" type="name" name="Город доставки" placeholder="Город доставки товара" />
+          <input class="text_form form_list_item" type="name" name="user" required placeholder="Ваше имя и фамилиия*" />
+          <input class="text_form form_list_item" type="email" name="email" required placeholder="Ваш e-mail*" />
+          <input type="tel" class="text_form form_list_item" required name="phone" placeholder="Ваш номер телефона*">    
+          <button class="sent_button">Оставить заказ</button>    
+        </form> 
+    </div>
     </div>
   
   </section>
@@ -364,7 +362,6 @@
   </section>
   <section id="contacts-form-sec" class="contacts-form-sec">
     <div class="container contacts-form-sec__wrapper">
-      <!-- <h2 class="activity__title sec-title__collaboration sec-title"> -->
       <h2 class="sec-title__collaboration">
         Cпівпраця</h2>
       <div class="collaboration-box">
@@ -387,22 +384,27 @@
         </p>
         <div id="form-collaboration-ua">
           <div class="contacts-form-sec__area">
-            <form class="contact-form" action="https://formspree.io/mdowzalj" method="POST">
+            <form class="contact-form" >
               <h3 class="contact-form__title">Заявка на співпрацю</h3>
-              <input class="input-name placeholder" type="name" required placeholder="Прізвище Ім'я*" />
-              <input class="input-name placeholder" type="name" placeholder="Назва організації" />
-              <input class="input-email placeholder" type="email" placeholder="Ваш e-mail*" />
+              <input type="hidden" name="project_name" value="Message from site">
+              <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+              <input type="hidden" name="form_subject" value="Заявка на співпрацю">
+              <input class="input-name placeholder" type="name" name="user_name" required placeholder="Прізвище Ім'я*" />
+              <input class="input-name placeholder" type="name" name="Назва організації" placeholder="Назва організації" />
+              <input class="input-email placeholder" type="email" name="email" placeholder="Ваш e-mail*" />
               <input type="tel" class="input-email placeholder" required name="phone" placeholder="Ваш номер телефону">
               <textarea class="input-textarea" name="comment" placeholder="Текст повідомлення"></textarea>
               <button class="sent_button">Надіслати заявку</button>
             </form>
           </div>
-        </div>
-  
+        </div> 
         <div class="js-block" id="form-collaboration-ru">
           <div class="contacts-form-sec__area">
-            <form class="contact-form" id="my-form" action="https://formspree.io/mdowzalj" method="POST">
+            <form class="contact-form">
               <h3 class="contact-form__title">Заявка на сотрудничество</h3>
+              <input type="hidden" name="project_name" value="Message from site">
+              <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+              <input type="hidden" name="form_subject" value="Заявка на сотрудничество">
               <input class="input-name placeholder" type="name" name="name" required placeholder="Фамилия имя*" />
               <input class="input-name placeholder" type="name" name="organisation" placeholder="Название организации" />
               <input class="input-email placeholder" type="email" name="email" placeholder="E-Mail*" />
@@ -414,11 +416,6 @@
         </div>
       </div>
     </div>
-    <!-- <form class="form form__apply" action="mail.php" method="POST"><span class="close">&#x2716;</span>
-      <input type="text" id="name" placeholder="имя" name="name" required=""> <input type="text" id="phone"
-        placeholder="телефон" name="phone" required=""> <input type="email" id="mail" placeholder="email" name="email"
-        required=""> <input type="submit" class="btn" value="отправить">
-    </form> -->
   
   </section>
   <section id="contacts" class="section__our-team">
@@ -443,7 +440,8 @@
         <a class="contacts-tel" href="tel:+380734440010">
           +380734440010
         </a>
-        <a class="contacts-email" href="mailto: fuel_sustems@ukr.net"> fuel_systems@ukr.net </a>
+        <a class="contacts-email" href="mailto:fuelsystem2020@gmail.com"> fuelsystem2020@gmail.com
+        </a>
       </div>
       <div class="map-box">
         <iframe class="map"
@@ -456,18 +454,11 @@
       <span class="footer-rights">© 2020 ТОВ "ЄДИНІ ПАЛИВНІ СИСТЕМИ УКРАЇНИ".</span>
     </div>
   </section>
-<!-- <div class="retro">
-
-  <form class="form form__apply" action="mail.php" method="POST"><span class="close">&#x2716;</span>
-    <input type="text" id="name" placeholder="имя" name="name" required=""> <input type="text" id="phone"
-      placeholder="телефон" name="phone" required=""> <input type="email" id="mail" placeholder="email" name="email"
-      required=""> <input type="submit" class="btn" value="отправить">
-  </form>
-</div> -->
 
   <button id="scrollBtn">&#9650;</button>
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="module" src="./js/scripts.js"></script>
-   </body>
+</body>
+
 </html>

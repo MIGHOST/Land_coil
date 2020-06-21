@@ -1,6 +1,5 @@
 <section id="contacts-form-sec" class="contacts-form-sec">
   <div class="container contacts-form-sec__wrapper">
-    <!-- <h2 class="activity__title sec-title__collaboration sec-title"> -->
     <h2 class="sec-title__collaboration">
       Cпівпраця</h2>
     <div class="collaboration-box">
@@ -23,22 +22,27 @@
       </p>
       <div id="form-collaboration-ua">
         <div class="contacts-form-sec__area">
-          <form class="contact-form" action="https://formspree.io/mdowzalj" method="POST">
+          <form class="contact-form" >
             <h3 class="contact-form__title">Заявка на співпрацю</h3>
-            <input class="input-name placeholder" type="name" required placeholder="Прізвище Ім'я*" />
-            <input class="input-name placeholder" type="name" placeholder="Назва організації" />
-            <input class="input-email placeholder" type="email" placeholder="Ваш e-mail*" />
+            <input type="hidden" name="project_name" value="Message from site">
+            <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка на співпрацю">
+            <input class="input-name placeholder" type="name" name="user_name" required placeholder="Прізвище Ім'я*" />
+            <input class="input-name placeholder" type="name" name="Назва організації" placeholder="Назва організації" />
+            <input class="input-email placeholder" type="email" name="email" placeholder="Ваш e-mail*" />
             <input type="tel" class="input-email placeholder" required name="phone" placeholder="Ваш номер телефону">
             <textarea class="input-textarea" name="comment" placeholder="Текст повідомлення"></textarea>
             <button class="sent_button">Надіслати заявку</button>
           </form>
         </div>
-      </div>
-
+      </div> 
       <div class="js-block" id="form-collaboration-ru">
         <div class="contacts-form-sec__area">
-          <form class="contact-form" id="my-form" action="https://formspree.io/mdowzalj" method="POST">
+          <form class="contact-form">
             <h3 class="contact-form__title">Заявка на сотрудничество</h3>
+            <input type="hidden" name="project_name" value="Message from site">
+            <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка на сотрудничество">
             <input class="input-name placeholder" type="name" name="name" required placeholder="Фамилия имя*" />
             <input class="input-name placeholder" type="name" name="organisation" placeholder="Название организации" />
             <input class="input-email placeholder" type="email" name="email" placeholder="E-Mail*" />
@@ -50,10 +54,5 @@
       </div>
     </div>
   </div>
-  <!-- <form class="form form__apply" action="mail.php" method="POST"><span class="close">&#x2716;</span>
-    <input type="text" id="name" placeholder="имя" name="name" required=""> <input type="text" id="phone"
-      placeholder="телефон" name="phone" required=""> <input type="email" id="mail" placeholder="email" name="email"
-      required=""> <input type="submit" class="btn" value="отправить">
-  </form> -->
 
 </section>

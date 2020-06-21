@@ -15,7 +15,7 @@ function sendWithPhpMailer($email,$name,$phone) {
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
     $mail->setFrom('fuelsystem@i.ua');
-    $mail->addAddress('fuelsystem2020@gmail.com');
+    $mail->addAddress('oliver_knan@i.ua','Адмін');
     $mail->isHTML(true);
     $mail->Subject = 'Заявка с сайта';
     $mail->Body = 'Пользователь ' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;;
