@@ -159,8 +159,6 @@ if (window.location.hash) {
 //     xhr.send(data);
 //   }
 "use strict";
-'use strict';
-
 var slideShow = function () {
   return function (selector, config) {
     var _slider = document.querySelector(selector),
