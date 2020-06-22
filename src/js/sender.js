@@ -1,16 +1,14 @@
 $(document).ready(function() {
 
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);	
+	$("form").submit(function() { 
+		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "https://formspree.io/mdowzalj", //Change
+			url: "../mail2.php", 
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
+			setTimeout(function() {				
 				th.trigger("reset");
 			}, 1000);
 		});

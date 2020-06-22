@@ -124,19 +124,25 @@
     <!-- Form -->
     <div id="order-from-ua" class="form_block">     
         <h2 class="activity__price-title price-title2">Форма замовлення</h2>
-        <form class="form_message">
-          <input class="text_form form_list_item" name="Товар" required placeholder="Назва товару*"  />
-          <input class="text_form form_list_item"  name="Кількість" placeholder="Кількість товару" />
-          <input class="text_form form_list_item" name="Місто доставки" placeholder="Місто доставки товару" />
-          <input class="text_form form_list_item" name="user" required placeholder="Ваше ім'я та прізвище*" />
-          <input class="text_form form_list_item" name="email" required placeholder="Ваш e-mail*" />
-          <input  class="text_form form_list_item" required name="phone" placeholder="Ваш номер телефону*">    
+          <form class="form_message">
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+          <input type="hidden" name="form_subject" value="Замовлення товару">
+          <input class="text_form form_list_item"  type="name" name="Товар" required placeholder="Назва товару*"  />
+          <input class="text_form form_list_item" type="name" name="Кількість" placeholder="Кількість товару" />
+          <input class="text_form form_list_item" type="name" name="Місто доставки" placeholder="Місто доставки товару" />
+          <input class="text_form form_list_item" type="user_name" name="user" required placeholder="Ваше ім'я та прізвище*" />
+          <input class="text_form form_list_item" type="email" name="email" required placeholder="Ваш e-mail*" />
+          <input class="text_form form_list_item" type="phone" required name="phone" placeholder="Ваш номер телефону*">    
           <button class="sent_button">Надіслати заявку</button>   
         </form> 
     </div>
     <div id="order-from-ru" class="form_block js-block">     
       <h2 class="activity__price-title price-title2">Форма заказа</h2>
-      <form class="form_message">    
+      <form class="form_message">
+        <input type="hidden" name="project_name" value="Site Name">
+        <input type="hidden" name="admin_email" value="fuelsystem2020@gmail.com">
+        <input type="hidden" name="form_subject" value="Закакз товара">    
         <input class="text_form form_list_item" type="name" name="Товар"  required placeholder="Название товара*"  />
         <input class="text_form form_list_item" type="name" name="Колличество товара" placeholder="Колличество товара" />
         <input class="text_form form_list_item" type="name" name="Город доставки" placeholder="Город доставки товара" />
