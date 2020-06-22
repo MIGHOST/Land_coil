@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
-		var th = $(this);
+		var th = $(this);	
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "https://formspree.io/mdowzalj", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");

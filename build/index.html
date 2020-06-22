@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coal product</title>
+    <title>Fuel system</title>
   
   
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- endinject -->
     <link rel="stylesheet" href="./css/styles.css">
   </head>
@@ -39,7 +39,7 @@
               <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">Про
                   компанію</a></li>
               <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукція</a></li>
-              <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Послуги</a></li>
+              <li class="navigation__item "><a href="#services" class="navigation__link link-nav ">Послуги</a></li>
               <li class="navigation__item "><a href="#contacts-form-sec" class="navigation__link link-nav">Співпраця</a>
               </li>
               <li class="navigation__item"><a href="#contacts" class="navigation__link link link-nav">Контакти</a></li>
@@ -50,7 +50,7 @@
               <li class="navigation__item navigation__item-tablet"><a href="#" class="navigation__link link-nav">О
                   Компании</a></li>
               <li class="navigation__item "><a href="#activity" class="navigation__link link-nav">Продукция </a></li>
-              <li class="navigation__item "><a href="#feedback" class="navigation__link link-nav ">Услуги</a></li>
+              <li class="navigation__item "><a href="#services" class="navigation__link link-nav ">Услуги</a></li>
               <li class="navigation__item "><a href="#contacts-form-sec"
                   class="navigation__link link-nav">Сотрудничество</a>
               </li>
@@ -68,7 +68,7 @@
             </li>
             <li class="navigation__item-tablet "><a href="#activity"
                 class="navigation__link-tablet link link-nav">Продукція</a></li>
-            <li class="navigation__item-tablet"><a href="#feedback"
+            <li class="navigation__item-tablet"><a href="#services"
                 class="navigation__link-tablet link link-nav">Послуги</a></li>
             <li class="navigation__item-tablet"><a href="#contacts-form-sec"
                 class="navigation__link-tablet link link-nav">Співпраця</a></li>
@@ -82,7 +82,7 @@
             </li>
             <li class="navigation__item-tablet "><a href="#activity"
                 class="navigation__link-tablet link link-nav">Продукция</a></li>
-            <li class="navigation__item-tablet"><a href="#feedback"
+            <li class="navigation__item-tablet"><a href="#services"
                 class="navigation__link-tablet link link-nav">Услуги</a></li>
             <li class="navigation__item-tablet"><a href="#contacts-form-sec"
                 class="navigation__link-tablet link link-nav">Сотрудничество</a></li>
@@ -97,7 +97,7 @@
     <div class="container intro_container">
       <div class="intro_block">
         <h1 class="intro_title">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ
-          <br>"ЄДИНІ ПАЛИВНІ СИСТЕМИ УКРАЇНИ"
+          "ЄДИНІ ПАЛИВНІ СИСТЕМИ УКРАЇНИ"
         </h1>
   
         <ul class="intro_list">
@@ -249,19 +249,19 @@
       <!-- Form -->
       <div id="order-from-ua" class="form_block">     
           <h2 class="activity__price-title price-title2">Форма замовлення</h2>
-          <form class="form_message" action="https://formspree.io/mdowzalj" method="POST">
-            <input class="text_form form_list_item" type="name" name="Товар" required placeholder="Назва товару*"  />
-            <input class="text_form form_list_item" type="name" name="Кількість" placeholder="Кількість товару" />
-            <input class="text_form form_list_item" type="name" name="Місто доставки" placeholder="Місто доставки товару" />
-            <input class="text_form form_list_item" type="name" name="user" required placeholder="Ваше ім'я та прізвище*" />
-            <input class="text_form form_list_item" type="email" name="email" required placeholder="Ваш e-mail*" />
-            <input type="tel" class="text_form form_list_item" required name="phone" placeholder="Ваш номер телефону*">    
+          <form class="form_message">
+            <input class="text_form form_list_item" name="Товар" required placeholder="Назва товару*"  />
+            <input class="text_form form_list_item"  name="Кількість" placeholder="Кількість товару" />
+            <input class="text_form form_list_item" name="Місто доставки" placeholder="Місто доставки товару" />
+            <input class="text_form form_list_item" name="user" required placeholder="Ваше ім'я та прізвище*" />
+            <input class="text_form form_list_item" name="email" required placeholder="Ваш e-mail*" />
+            <input  class="text_form form_list_item" required name="phone" placeholder="Ваш номер телефону*">    
             <button class="sent_button">Надіслати заявку</button>   
           </form> 
       </div>
       <div id="order-from-ru" class="form_block js-block">     
         <h2 class="activity__price-title price-title2">Форма заказа</h2>
-        <form class="form_message" action="https://formspree.io/mdowzalj" method="POST">    
+        <form class="form_message">    
           <input class="text_form form_list_item" type="name" name="Товар"  required placeholder="Название товара*"  />
           <input class="text_form form_list_item" type="name" name="Колличество товара" placeholder="Колличество товара" />
           <input class="text_form form_list_item" type="name" name="Город доставки" placeholder="Город доставки товара" />
@@ -274,9 +274,9 @@
     </div>
   
   </section>
-  <section id="feedback" class="feedback">
-    <div class="container feedback__wrapper">
-      <h2 class="activity__title sec-title feedback__tittle">Наші послуги</h2>
+  <section id="services" class="services">
+    <div class="container services__wrapper">
+      <h2 class="activity__title sec-title services__tittle">Наші послуги</h2>
       <div id="service-ua">
         <ul class="tilesWrap">
           <li class="tilesWrap__item_first">
@@ -284,19 +284,19 @@
             <h3>Вантажні роботи</h3>
             <p>
               Компанія має у розпорядженні спеціалізовані вугільні склади, більшість з яких із залізничною гілкою та
-              ваговою, обладнані для приймання та розвантаження вагонів. В наявності є техніка для
+              ваговою, обладнані для приймання та розвантаження вагонів.  В наявності є техніка для
               завантажувально-розвантажувальних робіт.
             </p>
   
           </li>
           <li>
             <h2>02</h2>
-            <h3>Доставка</h3>
-            <p>
+            <h3 class="tilesWrap__title">Доставка</h3>
+            <p class="tilesWrap_descriprion">
               Доставка товару здійснюється автомобільним або залізничним транспортом:
-              <br>- оптом до всіх областей України；
-              <br>- вроздріб по м. Київ та Київській області;
-              <br>- можливість самовивозу.
+              <br><br>- оптом до всіх областей України；
+              <br> <br>- вроздріб по м. Київ та Київській області;
+              <br> <br>- можливість самовивозу.
   
             </p>
   
@@ -304,10 +304,10 @@
           <li>
             <h2>03</h2>
             <h3>Брюнювання й зберігання</h3>
-            <p>
+            <p class="tilesWrap_descriprion3">
               Пропонуємо:
-              <br> - бронювати товар в необхідній кількості；
-              <br> - зберігати товар на наших складах （в разі потреби, за додатковим договором зберігання).
+              <br> <br>- бронювати товар в необхідній кількості；
+              <br> <br>- зберігати товар на наших складах （в разі потреби, за додатковим договором зберігання).
             </p>
   
           </li>
@@ -328,23 +328,22 @@
         </li>
         <li>
           <h2>02</h2>
-          <h3>Доставка</h3>
+          <h3 >Доставка</h3>
           <p>
             Доставка товара осуществляется автомобильным или железнодорожным транспортом:
-            <br>- оптом во все области Украины;
-            <br>- в розницу по г. Киев и Киевской области;
-            <br>- возможность самовывоза.
-  
+            <br><br>- оптом во все области Украины;
+            <br><br>- в розницу по <br> г. Киев и Киевской области;
+            <br><br>- возможность самовывоза.
           </p>
   
         </li>
         <li>
           <h2>03</h2>
           <h3>Бронирование и хранения</h3>
-          <p>
+          <p class="tilesWrap_descriprion_ru">
             Предлагаем:
-            <br> - забронировать товар в необходимом количестве;
-            <br> -хранить товар на наших складах (в случае необходимости, по дополнительному договору хранения).
+            <br><br> - забронировать товар в необходимом количестве;
+            <br><br> -хранить товар на наших складах (в случае необходимости, по дополнительному договору хранения).
           </p>
   
         </li>
@@ -377,21 +376,21 @@
         </p>
         <div id="form-collaboration-ua">
           <div class="contacts-form-sec__area">
-            <form class="contact-form" action="https://formspree.io/mdowzalj" method="POST">
+            <form class="contact-form">
               <h3 class="contact-form__title">Заявка на співпрацю</h3>
-              <input class="input-name placeholder" type="name" required placeholder="Прізвище Ім'я*" />
-              <input class="input-name placeholder" type="name" placeholder="Назва організації" />
-              <input class="input-email placeholder" type="email" placeholder="Ваш e-mail*" />
+              <input class="input-name placeholder" name="name" required placeholder="Прізвище Ім'я*" />
+              <input class="input-name placeholder" name="organisation" placeholder="Назва організації" />
+              <input class="input-email placeholder" name="email" placeholder="Ваш e-mail*" />
               <input type="tel" class="input-email placeholder" required name="phone" placeholder="Ваш номер телефону">
               <textarea class="input-textarea" name="comment" placeholder="Текст повідомлення"></textarea>
-              <button class="sent_button">Надіслати заявку</button>
+              <button class="sent_button" data-reload>Надіслати заявку</button>
             </form>
           </div>
         </div>
   
         <div class="js-block" id="form-collaboration-ru">
           <div class="contacts-form-sec__area">
-            <form class="contact-form" id="my-form" action="https://formspree.io/mdowzalj" method="POST">
+            <form class="contact-form" id="my-form">
               <h3 class="contact-form__title">Заявка на сотрудничество</h3>
               <input class="input-name placeholder" type="name" name="name" required placeholder="Фамилия имя*" />
               <input class="input-name placeholder" type="name" name="organisation" placeholder="Название организации" />

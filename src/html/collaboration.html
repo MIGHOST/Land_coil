@@ -22,21 +22,21 @@
       </p>
       <div id="form-collaboration-ua">
         <div class="contacts-form-sec__area">
-          <form class="contact-form" action="https://formspree.io/mdowzalj" method="POST">
+          <form class="contact-form">
             <h3 class="contact-form__title">Заявка на співпрацю</h3>
-            <input class="input-name placeholder" type="name" required placeholder="Прізвище Ім'я*" />
-            <input class="input-name placeholder" type="name" placeholder="Назва організації" />
-            <input class="input-email placeholder" type="email" placeholder="Ваш e-mail*" />
+            <input class="input-name placeholder" name="name" required placeholder="Прізвище Ім'я*" />
+            <input class="input-name placeholder" name="organisation" placeholder="Назва організації" />
+            <input class="input-email placeholder" name="email" placeholder="Ваш e-mail*" />
             <input type="tel" class="input-email placeholder" required name="phone" placeholder="Ваш номер телефону">
             <textarea class="input-textarea" name="comment" placeholder="Текст повідомлення"></textarea>
-            <button class="sent_button">Надіслати заявку</button>
+            <button class="sent_button" data-reload>Надіслати заявку</button>
           </form>
         </div>
       </div>
 
       <div class="js-block" id="form-collaboration-ru">
         <div class="contacts-form-sec__area">
-          <form class="contact-form" id="my-form" action="https://formspree.io/mdowzalj" method="POST">
+          <form class="contact-form" id="my-form">
             <h3 class="contact-form__title">Заявка на сотрудничество</h3>
             <input class="input-name placeholder" type="name" name="name" required placeholder="Фамилия имя*" />
             <input class="input-name placeholder" type="name" name="organisation" placeholder="Название организации" />

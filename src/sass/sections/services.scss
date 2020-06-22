@@ -1,4 +1,4 @@
-.feedback {
+.services {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/serBg.png);
   background-position: center center;
   background-size: cover;
@@ -12,7 +12,7 @@
   
 }
 
-.feedback__wrapper {
+.services__wrapper {
   width: 292px;
   margin: 0 auto;
   text-align: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.feedback__tittle {
+.services__tittle {
   margin-bottom: 25px;
   font-family: 'Helvetica Neue';
 
@@ -162,3 +162,24 @@
   
 }
 
+.tilesWrap__title {
+  padding: 15px;
+}
+
+.tilesWrap_descriprion{
+
+  padding-bottom: 30px;
+
+}
+
+.tilesWrap_descriprion3{
+
+  padding-bottom: 80px;
+
+}
+
+.tilesWrap_descriprion_ru{
+
+  padding-bottom: 48px;
+
+}

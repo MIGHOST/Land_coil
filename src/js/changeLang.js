@@ -20,7 +20,7 @@ const language = {
     activityPriceTitle: `Прайс-лист`,    
     listItemText: `* Цены по каждому заказу рассматриваются в индивидуальном порядке в зависимости от объема
     заказа, фасовки (мешок, биг-бег) и условий доставки!`,
-    feedbackTittle: "Наши услуги",
+    servicesTittle: "Наши услуги",
     contactsTitle: `Сотрудничество`,
     colaborationText1: ` Приоритетным направлением развития компании является расширение рынка сбыта готовой продукции за счет
     привлечения новых партнеров по реализации твердого топлива.`,
@@ -53,7 +53,7 @@ const activityTitle = document.querySelector(".activity__title");
 const activityDescription = document.querySelector(".activity__description");
 const activityPriceTitle = document.querySelector(".price-title");
 const listItemText = document.querySelector(".list-item__text");
-const feedbackTittle = document.querySelector(".feedback__tittle");
+const servicesTittle = document.querySelector(".services__tittle");
 const contactsTitle = document.querySelector(".sec-title__collaboration")
 const colaborationText1 = document.querySelector(".colaboration_text1")
 const colaborationText2 = document.querySelector(".colaboration_text2")
@@ -93,7 +93,7 @@ if (window.location.hash) {
     activityDescription.textContent = language.ru.activityDescription;
     activityPriceTitle.textContent = language.ru.activityPriceTitle; 
     listItemText.textContent = language.ru.listItemText;   
-    feedbackTittle.textContent = language.ru.feedbackTittle;
+    servicesTittle.textContent = language.ru.servicesTittle;
     contactsTitle.textContent = language.ru.contactsTitle;
     colaborationText1.textContent = language.ru.colaborationText1;
     colaborationText2.textContent = language.ru.colaborationText2;
