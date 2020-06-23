@@ -9,7 +9,7 @@
   @media (min-width: 768px) {
     padding: 50px;
   }
-  
+
 }
 
 .services__wrapper {
@@ -57,11 +57,11 @@
   min-height: 25vh;
   background: #262a2b;
   border: 1px solid #252727;
-  text-align: left; 
+  text-align: left;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
-  } 
+  }
 
 }
 
@@ -79,6 +79,7 @@
   font-size: 20px;
   color: $secondary-gold;
   margin-bottom: 10px;
+
   @media (min-width: 1200px) {
     font-size: 28px;
     line-height: 32px;
@@ -91,6 +92,7 @@
   line-height: 22px;
   color: #b7b7b7;
   margin-top: 5px;
+
   @media (min-width: 1200px) {
     font-size: 20px;
     line-height: 28px;
@@ -130,7 +132,6 @@
 
 .tilesWrap li:hover h2 {
   top: 0px;
-  // opacity: 0.6;
 }
 
 .tilesWrap li:hover h3 {
@@ -143,11 +144,12 @@
   margin-top: 10px;
   font-size: 18px;
   color: white;
-  font-family: 'Helvetica Neue'; 
+  font-family: 'Helvetica Neue';
+
   @media (min-width: 1200px) {
     font-size: 26px;
     line-height: 32px;
-  } 
+  }
 
 }
 
@@ -159,26 +161,26 @@
   left: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.02);
-  
+
 }
 
 .tilesWrap__title {
   padding: 15px;
 }
 
-.tilesWrap_descriprion{
+.tilesWrap_descriprion {
 
   padding-bottom: 30px;
 
 }
 
-.tilesWrap_descriprion3{
+.tilesWrap_descriprion3 {
 
   padding-bottom: 80px;
 
 }
 
-.tilesWrap_descriprion_ru{
+.tilesWrap_descriprion_ru {
 
   padding-bottom: 48px;
 
