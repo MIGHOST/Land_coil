@@ -70,6 +70,8 @@
   margin: 0;
   position: absolute;
   opacity: 0.2;
+
+
   top: 50px;
   right: 10px;
   transition: all 0.3s ease-in-out;
@@ -77,9 +79,9 @@
 
 .tilesWrap li h3 {
   font-size: 20px;
+  position: absolute;
   color: $secondary-gold;
   margin-bottom: 10px;
-
   @media (min-width: 1200px) {
     font-size: 28px;
     line-height: 32px;
@@ -91,7 +93,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #b7b7b7;
-  margin-top: 5px;
+  margin-top: 65px;    
 
   @media (min-width: 1200px) {
     font-size: 20px;
@@ -165,23 +167,23 @@
 }
 
 .tilesWrap__title {
-  padding: 15px;
+  padding-bottom: 13px;
 }
 
 .tilesWrap_descriprion {
 
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
 }
 
 .tilesWrap_descriprion3 {
 
-  padding-bottom: 80px;
+  padding-bottom: 84px;
 
 }
 
 .tilesWrap_descriprion_ru {
 
-  padding-bottom: 48px;
+  padding-bottom: 56px;
 
 }
